@@ -1,0 +1,14 @@
+{
+  "name": "react-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./server/bin/www",
+  "scripts": {
+    "preinstall": "cd server && npm install",
+    "start": "node ./server/bin/www",
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
