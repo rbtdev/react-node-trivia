@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import logo from './logo.svg';
-import './app.css';
-import Chat from './chat';
+import './index.css';
+import Chat from '../trivia';
 
 class App extends Component {
   constructor() {
