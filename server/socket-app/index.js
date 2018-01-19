@@ -11,10 +11,11 @@ class socketApp {
         if (files) {
             files.forEach((file) => {
                 try {
-                    let connection = require(path.join(__dirname, connectionDir, file));
+                    let Connection = require(path.join(__dirname, connectionDir, file));
                     let connectionName = path.basename(file,'.js');
                     let socketServer = this.io.of('/' + connectionName);
-                    socketServer.on('connection', connection.onConnect.bind(socketServer));
+                    let connection = new Connection(socketServer, connectionName);
+                    socketServer.on('connection', connection.onConnect.bind(connection));
                     console.log("Loaded socket connection '" + connectionName + "'")
                 }
                 catch (ex) {

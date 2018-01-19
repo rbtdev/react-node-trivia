@@ -2,7 +2,7 @@
 div {
     border-radius: 3px;
 }
-.chat {
+.trivia {
     position: relative;
     margin: 0 auto;
     margin-top: 10px;
@@ -13,12 +13,12 @@ div {
     height: 400px;
 }
 
-.chat-content {
+.trivia-content {
     height: 100%;
     width: 100%;
 }
 
-.chat-userlist {
+.trivia-userlist {
     width: 25%;
     height: 100%;
     float: left;
@@ -26,10 +26,10 @@ div {
     border-right: 1px solid black;
 }
 
-.chat-userlist-username {
+.trivia-userlist-username {
     padding: 5px;
 }
-.chat-userlist-title {
+.trivia-userlist-title {
     text-align: center;
     padding:2px;
     border-bottom: 1px solid black;
@@ -37,41 +37,41 @@ div {
     border-bottom-right-radius: 0px;
 }
 
-.chat-messages {
+.trivia-questions {
     float: left;
     width: 75%;
     height: 100%;
     overflow-y: auto;
 }
 
-.chat-input {
+.trivia-input {
     width: 100%;
     clear: both;
     border-top: 1px solid #777777;
 }
 
-.chat-input-send {
+.trivia-input-send {
     position: relative;
     right: -1px;
     float: right;
     width: 20%;
 }
 
-.chat-input-text {
+.trivia-input-text {
     position: relative;
     left: -1px;
     float:left;
     width:80%;
 }
 
-.chat-typing-indicator {
+.trivia-typing-indicator {
     height: 20px;
 }
 
-.chat-typing-indicator.active {
+.trivia-typing-indicator.active {
 }
 
-.chat-typing-indicator.active::before {
+.trivia-typing-indicator.active::before {
     display: inline-block;
     position: relative;
     width: 30px;
@@ -83,10 +83,10 @@ div {
     top: -3px;
 }
 
-.chat-clear {
+.trivia-clear {
     clear: both;
 }
-.chat-message {
+.trivia-message {
     background-color: lightgreen;
     padding: 3px;
     border-radius: 3px;
@@ -97,22 +97,22 @@ div {
     margin-left: 3px;
 }
 
-.chat-message.owner {
+.trivia-message.owner {
     float: right;
     margin-left: 0px;
     margin-right: 3px;
     background-color: lightblue;
 }
-.chat-message-text {
+.trivia-message-text {
     color: black;
     padding-left: 5px;
 }
 
-.chat-message-username {
+.trivia-message-username {
     font-size: 16px;
 }
 
-.chat-message-timeStamp {
+.trivia-message-timeStamp {
     font-style: italic;
     font-size: 8px;
 }
